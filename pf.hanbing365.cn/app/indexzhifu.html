@@ -130,7 +130,7 @@ jssdkconfig.jsApiList = [
     });
 </script>
 <meta charset="UTF-8">
-<title>河南单身终点站</title>
+<title>本地单身终点站</title>
 <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width,height=device-height, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="format-detection" content="telephone=no" />
 <script type="text/javascript">
@@ -143,7 +143,7 @@ jssdkconfig.jsApiList = [
 <div class="subpage" style="margin-bottom:0rem;">
 	<div class="header">
 		<a href="index8159.html?i=3&amp;c=entry&amp;do=index&amp;m=yy_shequn2"><img src="addons/yy_shequn2/template/mobile/images/arrow.jpg"/></a>
-		<p>河南单身终点站</p>
+		<p id="biaoti">单身终点站</p>
 	</div>
 		<div class="qunshow">
 						<div class="show" onclick="clickButton()">
@@ -185,12 +185,12 @@ jssdkconfig.jsApiList = [
 									<img src="addons/yy_shequn2/template/mobile/images/novip.jpg" class="novipbg"/>
 				<div class="novipt">
 					<img src="addons/yy_shequn2/images/qunIco/qun7.jpg"/>
-					<span>河南单身终点站4</span>
+					<span id="biaotispan">单身终点站</span>
 				</div>
 				<div class="novip2 novipp">
 					支付<span>19.9</span>元后可进群
 					<!-- <a id="clickpay" href="javascript:;" style="color:#34b449;">点击支付&gt</a> -->
-					<a id="clickpay" href="https://mp.weixin.qq.com/s?__biz=MzA5MTg3NzA5Mw==&amp;mid=2650031829&amp;idx=1&amp;sn=38ac6bfc76e4f6b486066d4a57ffaef3&amp;chksm=88755d5fbf02d4492558388b76f05f10f12f99a63c9b63294027a31b6555b3af92fba07b2c26&token=84776933&lang=zh_CN#rd" style="color:#34b449;">点击支付&gt</a>
+					<a id="clickpay" href="https://mp.weixin.qq.com/s?__biz=MzA5MTg3NzA5Mw==&mid=2650031850&idx=1&sn=c5b186279f12ff0021762551372b21a4&chksm=88755d60bf02d4765b826f638caf08968751ec4800a4df5f9847b8cbddb00388a88e6a9b8bcc#rd" style="color:#34b449;">点击支付&gt</a>
 					
 
 				</div>
@@ -273,6 +273,21 @@ function jspay(jsParam) {
 		var man = document.getElementById('man');
 	    man.style.display="none"; 
 	}
+	function getQueryVariable(variable)
+		{
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");
+		for (var i=0;i<vars.length;i++) {
+		var pair = vars[i].split("=");
+		if(pair[0] == variable){return pair[1];}
+		}
+		return(false);
+		}
+	var tigle = getQueryVariable("title")
+	var biaoti = document.getElementById('biaoti');
+	biaoti.innerText = tigle;
+	var biaotispan = document.getElementById('biaotispan');
+	biaotispan.innerText = tigle+"4"
 </script>
 
 <!-- Mirrored from pf.hanbing365.cn/app/index.php?i=3&c=entry&do=qunDetail&m=yy_shequn2&itemId=67 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Dec 2022 06:24:15 GMT -->

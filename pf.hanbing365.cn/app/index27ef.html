@@ -37,17 +37,17 @@
             }
         });
 	  	wx.updateAppMessageShareData({ 
-		    title: "启思婚恋", // 分享标题
+		    title: "本地生活脱单", // 分享标题
 		    desc: "爱不等待，莫负佳期", // 分享描述
-		    link: 'https://pf.hanbing365.cn/app/index.php?i=3&c=entry&do=usrregister&did=&pdid=&m=yy_shequn2', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+		    link: 'https://yangbin.hartv.com:9000/', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
 		    imgUrl: "https://pf.hanbing365.cn/attachment/images/3/2022/09/AYowS9WW8AP399SqAc9zYOR8jOAJYd.jpg", // 分享图标
 		    success: function (e) {
 		    }
 		})
 		    //需在用户可能点击分享按钮前就先调用
 	  	wx.updateTimelineShareData({ 
-		    title: "启思婚恋", // 分享标题
-		    link: 'https://pf.hanbing365.cn/app/index.php?i=3&c=entry&do=usrregister&did=&pdid=&m=yy_shequn2', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+		    title: "本地生活脱单", // 分享标题
+		    link: 'https://yangbin.hartv.com:9000/', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
 		    imgUrl: "https://pf.hanbing365.cn/attachment/images/3/2022/09/AYowS9WW8AP399SqAc9zYOR8jOAJYd.jpg", // 分享图标
 		    success: function (e) {
 		    }
@@ -210,7 +210,7 @@
 		mp+= '			<img src="addons/yy_shequn2/template/mobile/images/gongzhonghao.jpg"/>';
 		mp+= '		</div>';
 		mp+= '		<div class="lcc">';
-		mp+= '			<p >实时获取交友信息，爱情树洞</p>';
+		mp+= '			<p >脱单，90后，交友，婚恋</p>';
 		mp+= '			<p   class="lct"></p>';
 		mp+= '		</div>';
 		mp+= '		<div class="lr">';
@@ -455,7 +455,7 @@ for (var j = 0; j < data.length; j++){
     var hintImgLaber = data[j].hintImgLaber ;
     var hintType = data[j].hintType ;
     var hintImgUrl = "https://pf.hanbing365.cn/attachment/"+hintImg ;
-    var aLink = "indexzhifu.html?i=3&amp;c=entry&amp;do=qunDetail&amp;m=yy_shequn2&amp;itemId="+itemId; //群详情页
+    var aLink = "indexzhifu.html?i=3&amp;c=entry&amp;do=qunDetail&amp;m=yy_shequn2&amp;itemId="+itemId+"&title="+title; //群详情页
     var html2 = '';
     html2+='<li>';
     html2+='<div class="popup" id="popup'+itemId+'">';
@@ -563,7 +563,7 @@ for (var j = 0; j < data.length; j++){
     var hintImgLaber = data[j].hintImgLaber ;
     var hintType = data[j].hintType ;
     var hintImgUrl = "https://pf.hanbing365.cn/attachment/"+hintImg ;
-    var aLink = "indexzhifu.html?i=3&amp;c=entry&amp;do=qunDetail&amp;m=yy_shequn2&amp;itemId="+itemId; //群详情页
+    var aLink = "indexzhifu.html?i=3&amp;c=entry&amp;do=qunDetail&amp;m=yy_shequn2&amp;itemId="+itemId+"&title="+title; //群详情页
     var html2 = '';
     html2+='<li>';
     html2+='<div class="popup" id="popup'+itemId+'">';
