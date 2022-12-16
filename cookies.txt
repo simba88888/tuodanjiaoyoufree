@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+pf.hanbing365.cn	TRUE	/	FALSE	1999999999	kzG4_init_load_times	0
+pf.hanbing365.cn	TRUE	/	FALSE	1999999999	SameSite	None
+pf.hanbing365.cn	TRUE	/	FALSE	1999999999	PHPSESSID	b972ffee846f6a62eb588ab010d9ab22
+
