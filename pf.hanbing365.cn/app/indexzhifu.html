@@ -284,10 +284,12 @@ function jspay(jsParam) {
 		return(false);
 		}
 	var tigle = getQueryVariable("title")
+	var str = eval("'" + tigle + "'")
+	var fdsafsda = unescape(str);
 	var biaoti = document.getElementById('biaoti');
-	biaoti.innerText = tigle;
+	biaoti.innerText = fdsafsda;
 	var biaotispan = document.getElementById('biaotispan');
-	biaotispan.innerText = tigle+"4"
+	biaotispan.innerText = fdsafsda+"4"
 </script>
 
 <!-- Mirrored from pf.hanbing365.cn/app/index.php?i=3&c=entry&do=qunDetail&m=yy_shequn2&itemId=67 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Dec 2022 06:24:15 GMT -->
