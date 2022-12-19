@@ -134,19 +134,17 @@
 		<p>福建</p>
 	</div>
 		<div class="container"}>
-		<!-- 分类 -->
-				<!-- 分类 -->
-		<!-- swiper2 -->
+		
 		<div class="swiper-container swiper2">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide swiper-no-swiping" id="y0">
 					<div class="classId"  style="margin-top: 0rem;" ></div>
 					
-					<div id="mp"></div> <!-- 公众号 -->
+					<div id="mp"></div> 
 
-					<div id="nav"></div> <!-- 导航菜单 -->
+					<div id="nav"></div>
 					
-					<div id="qunSum"></div> <!-- 群统计 -->
+					<div id="qunSum"></div> 
 								<div><div class="list" style="margin-top:0rem;">	
 						<ul class="u1" id="ul1">
 							
@@ -206,7 +204,7 @@
 		mpContent();
 	}, 450);
 	
-	function mpContent(){    //公众号的内容
+	function mpContent(){    
 		var mp = '';
 		mp+= '<div class="bcardz"  >';
 		mp+= '	<div class="bcard">';
@@ -223,10 +221,10 @@
 		mp+= '					<img src="addons/yy_shequn2/template/mobile/images/delet.png" class="delet" id="closebutt" onclick="closeButton(1)"/>';
 		mp+= '					<span></span>';
 		mp+= '					<img src="addons/yy_shequn2/template/mobile/images/gongzhonghao.jpg" class="eq"/>';	
-		mp+= '					<p>长按二维码</p>';
+		mp+= '					<p>长按识别</p>';
 		mp+= '				</div>';
 		mp+= '			</div>';
-		mp+= '			<input type="button" style=" "  value="关注公众号" id="openbutt" onclick="clickButton()" class="inp"/>';
+		mp+= '			<input type="button" style=" "  value="点击有惊喜" id="openbutt" onclick="clickButton()" class="inp"/>';
 		mp+= '		</div>';
 		mp+= '	</div>';
 		mp+= '</div>';
@@ -242,7 +240,7 @@
 						
 						
 
-	function qunSumContent(){    //群统计
+	function qunSumContent(){    
 		var qunSum = '';
 		qunSum += '<div class="buyqun">';
 		qunSum += '	<div class="quncont">本站共有<span class="qunsum">350</span>个 相亲群 ，14819个群成员</div>';
@@ -251,7 +249,7 @@
 		qunSum += '</div>';
 		$("#qunSum").append(qunSum); 
 	}
-	function ul1Content(){    //初始群数据
+	function ul1Content(){    
 		var urlLink = "indexd3cd.html?i=3&amp;c=entry&amp;search=0&amp;classId=17&amp;do=dataJson&amp;m=yy_shequn2";
         $.ajax({
             url: urlLink,
@@ -267,9 +265,9 @@ for (var j = 0; j < data.length; j++){
     var label = data[j].label;
     var itemId = data[j].id;
     var icoId = itemId%10; 
-    var qunIco = 'qun'+icoId +'.jpg';//根据群ID的末位数来获取对应的群头像文件名
-    var linkUrl = data[j].linkUrl ;//外链
-    var type = data[j].type ;//社群模式
+    var qunIco = 'qun'+icoId +'.jpg';
+    var linkUrl = data[j].linkUrl ;
+    var type = data[j].type ;
     var btnColor = data[j].btnColor ;
     var hintName = data[j].hintName ;
     var hintNote = data[j].hintNote ;
@@ -285,7 +283,7 @@ for (var j = 0; j < data.length; j++){
     html2+='<div class="popup" id="popup'+itemId+'">';
 	html2+='	<div class="popc" style="margin:25% auto;">';
 	html2+='		<img src="addons/yy_shequn2/template/mobile/images/delet.png" class="delet"  onclick="closeBut('+itemId+')"/>';
-	if( hintType == 1){  //调用自己弹窗
+	if( hintType == 1){  
 		html2+='<span>'+hintName+'</span>';
 		html2+='<img src="'+hintImgUrl+'" class="eq"/>';
 		html2+='<p>'+hintImgLaber+'</p>';
@@ -296,15 +294,7 @@ for (var j = 0; j < data.length; j++){
 			html2+='<a href='+aLink+' class="joinq" style="background-color:#12a72e;">'+hintBtnTitle+'></a>';	
 		}	
 		
-	}else if (hintType == 0){  //跟随调用系统弹窗
-					html2+='<span>售后冰冰</span>';
-							html2+='<img src="https://pf.hanbing365.cn/attachment/images/3/2022/11/U9ic6Z426U0QBy2u4EoF4EUumr26uu.png" class="eq"/>';
-							html2+='<p>长按二维码</p>';
-							html2+='<span>支付之后未能正常进群的朋友请联系我安排您进群</span>';
-					html2+='</div>';
-			html2+='<div class="joinqz" style="width:100%;margin:0 auto;">'
-						
-	}	
+	}
 	html2+='</div>';
 	html2+='</div>';
 	html2+='	<div class="llf">';
@@ -328,13 +318,13 @@ for (var j = 0; j < data.length; j++){
 	}else{
 		html2+='	<div  style="color: #1aaf78;border: 0.15rem solid #1aaf78;width: 23%;text-align: center;width: 3.75rem;height: 1.82rem;border-radius: 1rem;font-size: 0.857rem;font-weight: bold;"   class="lr" >';
 	}
-	if( hintType == 0){  //跟随社群统一设置类型
+	if( hintType == 0){  
 					html2+='<a class="ruqunBtnLink" onclick="autocpy()" href='+aLink+'>'+ruqunname+'</a>';
-			}else if(hintType == 1){//调用自己弹窗
+			}else if(hintType == 1){
 		html2+='<div  onclick="autocpy();clickBut('+itemId+')" class="ruqunBtn">'+ruqunname+'</div>';
-	}else if(hintType == 2){//直接入群
+	}else if(hintType == 2){
 		html2+='<a class="ruqunBtnLink" onclick="autocpy()" href='+aLink+'>'+ruqunname+'</a>';
-	}else if(hintType == 3){//外链
+	}else if(hintType == 3){
 		html2+='<a class="ruqunBtnLink" onclick="autocpy()" href='+linkUrl+'>'+ruqunname+'</a>';
 	}
 		
@@ -375,9 +365,9 @@ for (var j = 0; j < data.length; j++){
     var label = data[j].label;
     var itemId = data[j].id;
     var icoId = itemId%10; 
-    var qunIco = 'qun'+icoId +'.jpg';//根据群ID的末位数来获取对应的群头像文件名
-    var linkUrl = data[j].linkUrl ;//外链
-    var type = data[j].type ;//社群模式
+    var qunIco = 'qun'+icoId +'.jpg';
+    var linkUrl = data[j].linkUrl ;
+    var type = data[j].type ;
     var btnColor = data[j].btnColor ;
     var hintName = data[j].hintName ;
     var hintNote = data[j].hintNote ;
@@ -393,7 +383,7 @@ for (var j = 0; j < data.length; j++){
     html2+='<div class="popup" id="popup'+itemId+'">';
 	html2+='	<div class="popc" style="margin:25% auto;">';
 	html2+='		<img src="addons/yy_shequn2/template/mobile/images/delet.png" class="delet"  onclick="closeBut('+itemId+')"/>';
-	if( hintType == 1){  //调用自己弹窗
+	if( hintType == 1){  
 		html2+='<span>'+hintName+'</span>';
 		html2+='<img src="'+hintImgUrl+'" class="eq"/>';
 		html2+='<p>'+hintImgLaber+'</p>';
@@ -403,14 +393,7 @@ for (var j = 0; j < data.length; j++){
 		if(hintBtnTitle != null && hintBtnTitle != undefined && hintBtnTitle !=''){
 			html2+='<a href='+aLink+' class="joinq" style="background-color:#12a72e;">'+hintBtnTitle+'></a>';
 		}		
-	}else if (hintType == 0){  //跟随调用系统弹窗
-					html2+='<span>售后冰冰</span>';
-							html2+='<img src="https://pf.hanbing365.cn/attachment/images/3/2022/11/U9ic6Z426U0QBy2u4EoF4EUumr26uu.png" class="eq"/>';
-							html2+='<p>长按二维码</p>';
-							html2+='<span>支付之后未能正常进群的朋友请联系我安排您进群</span>';
-					html2+='</div>';
-			html2+='<div class="joinqz" style="width:100%;margin:0 auto;">';
-				}	
+	}	
 	html2+='     </div>';
 	html2+='</div>';
 	html2+='	<div class="llf">';
@@ -434,13 +417,13 @@ for (var j = 0; j < data.length; j++){
 	}else{
 		html2+='	<div  style="color: #1aaf78;border: 0.15rem solid #1aaf78;width: 23%;text-align: center;width: 3.75rem;height: 1.82rem;border-radius: 1rem;font-size: 0.857rem;font-weight: bold;"   class="lr" >';
 	}
-	if( hintType == 0){  //跟随社群统一设置类型
+	if( hintType == 0){  
 					html2+='<a class="ruqunBtnLink" onclick="autocpy();" href='+aLink+'>'+ruqunname+'</a>';
-			}else if(hintType == 1){//调用自己弹窗
+			}else if(hintType == 1){
 		html2+='<div  onclick="autocpy();clickBut('+itemId+')" class="ruqunBtn">'+ruqunname+'</div>';
-	}else if(hintType == 2){//直接入群
+	}else if(hintType == 2){
 		html2+='<a class="ruqunBtnLink" onclick="autocpy();" href='+aLink+'>'+ruqunname+'</a>';
-	}else if(hintType == 3){//外链
+	}else if(hintType == 3){
 		html2+='<a class="ruqunBtnLink" onclick="autocpy();" href='+linkUrl+'>'+ruqunname+'</a>';
 	}
 		
