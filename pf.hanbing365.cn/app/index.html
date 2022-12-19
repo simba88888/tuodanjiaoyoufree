@@ -232,33 +232,6 @@
 		mpContent();
 	}, 450);
 	
-	function mpContent(){    //公众号的内容
-		var mp = '';
-		mp+= '<div class="bcardz"  >';
-		mp+= '	<div class="bcard">';
-		mp+= '		<div class="llff">';
-		mp+= '			<img src="addons/yy_shequn2/template/mobile/images/gongzhonghao.jpg"/>';
-		mp+= '		</div>';
-		mp+= '		<div class="lcc">';
-		mp+= '			<p >脱单，90后，交友，婚恋</p>';
-		mp+= '			<p   class="lct"></p>';
-		mp+= '		</div>';
-		mp+= '		<div class="lr">';
-		mp+= '			<div class="popup" id="pop" style="top:0;z-index:5;">';
-		mp+= '				<div class="popc" style="margin:35% auto;">';
-		mp+= '					<img src="addons/yy_shequn2/template/mobile/images/delet.png" class="delet" id="closebutt" onclick="closeButton(1)"/>';
-		mp+= '					<span></span>';
-		mp+= '					<img src="addons/yy_shequn2/template/mobile/images/gongzhonghao.jpg" class="eq"/>';	
-		mp+= '					<p>长按二维码</p>';
-		mp+= '				</div>';
-		mp+= '			</div>';
-		mp+= '			<input type="button" style=" "  value="关注公众号" id="openbutt" onclick="clickButton()" class="inp"/>';
-		mp+= '		</div>';
-		mp+= '	</div>';
-		mp+= '</div>';
-		$("#mp").append(mp); 
-	}
-
 	function navContent(){    //分类导航
 		var nav = '';
 		nav+= '<div class="subnav">';
@@ -425,46 +398,40 @@
 		// nav+= '				<p>陕西省</p>';
 		// nav+= '			</li>';
 		// nav+= '		</a>';
-		// 				nav+= '		<a href="index2296.html?i=3&amp;c=entry&amp;do=index&amp;m=yy_shequn2&amp;classId=6">';
-		// nav+= '			<li>';
-		// nav+= '				<img src="attachment/images/3/2022/09/AC6KM2fEl2kctFD47s44Em6sDmse7K.png"/>';
-		// nav+= '				<p>宁夏</p>';
-		// nav+= '			</li>';
-		// nav+= '		</a>';
-		// 				nav+= '		<a href="index10e7.html?i=3&amp;c=entry&amp;do=index&amp;m=yy_shequn2&amp;classId=31">';
-		// nav+= '			<li>';
-		// nav+= '				<img src="attachment/images/3/2022/09/BeVmVNp0vA3AhF0A673zF6t9u0FoPP.png"/>';
-		// nav+= '				<p>甘肃省</p>';
-		// nav+= '			</li>';
-		// nav+= '		</a>';
-		// 				nav+= '		<a href="index27ef.html?i=3&amp;c=entry&amp;do=index&amp;m=yy_shequn2&amp;classId=32">';
-		// nav+= '			<li>';
-		// nav+= '				<img src="attachment/images/3/2022/09/JwnnPYZ5Z9w4ptGUjpuJWgJnUw3snu.png"/>';
-		// nav+= '				<p>青海省</p>';
-		// nav+= '			</li>';
-		// nav+= '		</a>';
-		// 				nav+= '		<a href="indexd563.html?i=3&amp;c=entry&amp;do=index&amp;m=yy_shequn2&amp;classId=33">';
-		// nav+= '			<li>';
-		// nav+= '				<img src="attachment/images/3/2022/09/iUQnVmv8nnnNAUaXzVUnnh3Vu1ANNu.png"/>';
-		// nav+= '				<p>内蒙古</p>';
-		// nav+= '			</li>';
-		// nav+= '		</a>';
-		// 				nav+= '		<a href="index9d06.html?i=3&amp;c=entry&amp;do=index&amp;m=yy_shequn2&amp;classId=34">';
-		// nav+= '			<li>';
-		// nav+= '				<img src="attachment/images/3/2022/09/Wt0497vZ89Y9Mk79Ij144IdchyV09c.png"/>';
-		// nav+= '				<p>西藏</p>';
-		// nav+= '			</li>';
-		// nav+= '		</a>';
-		// 				nav+= '		<a href="index3e8b.html?i=3&amp;c=entry&amp;do=index&amp;m=yy_shequn2&amp;classId=8">';
-		// nav+= '			<li>';
-		// nav+= '				<img src="attachment/images/3/2022/09/F03bCRAmqisP4mV1aCMrZ313C4pvIT.png"/>';
-		// nav+= '				<p>新疆</p>';
-		// nav+= '			</li>';
-		// nav+= '		</a>';
+
 						nav+= '	</ul>';
 		nav+= '</div>';
 		$("#nav").append(nav); 
 	}
+
+	function mpContent(){    //公众号的内容
+		var mp = '';
+		mp+= '<div class="bcardz"  >';
+		mp+= '	<div class="bcard">';
+		mp+= '		<div class="llff">';
+		mp+= '			<img src="addons/yy_shequn2/template/mobile/images/gongzhonghao.jpg"/>';
+		mp+= '		</div>';
+		mp+= '		<div class="lcc">';
+		mp+= '			<p >脱单，90后，交友，婚恋</p>';
+		mp+= '			<p   class="lct"></p>';
+		mp+= '		</div>';
+		mp+= '		<div class="lr">';
+		mp+= '			<div class="popup" id="pop" style="top:0;z-index:5;">';
+		mp+= '				<div class="popc" style="margin:35% auto;">';
+		mp+= '					<img src="addons/yy_shequn2/template/mobile/images/delet.png" class="delet" id="closebutt" onclick="closeButton(1)"/>';
+		mp+= '					<span></span>';
+		mp+= '					<img src="addons/yy_shequn2/template/mobile/images/gongzhonghao.jpg" class="eq"/>';	
+		mp+= '					<p>长按二维码</p>';
+		mp+= '				</div>';
+		mp+= '			</div>';
+		mp+= '			<input type="button" style=" "  value="关注公众号" id="openbutt" onclick="clickButton()" class="inp"/>';
+		mp+= '		</div>';
+		mp+= '	</div>';
+		mp+= '</div>';
+		$("#mp").append(mp); 
+	}
+
+	
 
 	function qunSumContent(){    //群统计
 		var qunSum = '';
