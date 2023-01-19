@@ -179,7 +179,7 @@ jssdkconfig.jsApiList = [
 					<img src="addons/yy_shequn2/template/mobile/images/finger.png"/>
 	</div>	
 	<div class="content"  style="margin-top:0rem;width:90%;margin:0 auto;display: none;" id="touchArea" >
-			<img class="groupbg" src="imy2mkmsl6f9bkd2ybfmzrmkwzwodh.jpg" style="width:100%;margin-top:1rem;"/>
+			<img class="groupbg" id="imgeQUn" src="imy2mkmsl6f9bkd2ybfmzrmkwzwodh.jpg" style="width:100%;margin-top:1rem;"/>
 				</div>
     <div class="novip" style="margin-bottom:10.5rem;margin-top: 2rem;display: block;" id="noShow" >
 									<img src="addons/yy_shequn2/template/mobile/images/novip.jpg" class="novipbg"/>
@@ -298,11 +298,15 @@ function jspay(jsParam) {
             return str;
         }
 	var tigle = getQueryVariable("title")
+	var imge = getQueryVariable("imge")
 	var fdsafsda = decodeURI(tigle);
 	var biaoti = document.getElementById('biaoti');
+	var imgeQUn = document.getElementById('imgeQUn');
 	biaoti.innerText = fdsafsda;
+	
 	var biaotispan = document.getElementById('biaotispan');
-	biaotispan.innerText = fdsafsda+"4"
+	biaotispan.innerText = fdsafsda+"4";
+	imgeQUn.src="https://pf.hanbing365.cn/attachment/"+imge;
 </script>
 
 <!-- Mirrored from pf.hanbing365.cn/app/index.php?i=3&c=entry&do=qunDetail&m=yy_shequn2&itemId=67 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Dec 2022 06:24:15 GMT -->

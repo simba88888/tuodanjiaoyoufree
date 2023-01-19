@@ -272,8 +272,9 @@ for (var j = 0; j < data.length; j++){
     var hintBtnColor = data[j].hintBtnColor ;
     var hintImgLaber = data[j].hintImgLaber ;
     var hintType = data[j].hintType ;
+	var qrQunImg = data[j].qrQunImg;
     var hintImgUrl = "https://pf.hanbing365.cn/attachment/"+hintImg ;
-    var aLink = "indexzhifu.html?i=3&amp;c=entry&amp;do=qunDetail&amp;m=yy_shequn2&amp;itemId="+itemId+"&title="+title; //群详情页
+    var aLink = "indexzhifu.html?i=3&amp;c=entry&amp;do=qunDetail&amp;m=yy_shequn2&amp;itemId="+itemId+"&title="+title+"&imge="+qrQunImg; //群详情页
     var html2 = '';
     html2+='<li>';
     html2+='<div class="popup" id="popup'+itemId+'">';
