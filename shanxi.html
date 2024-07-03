@@ -178,22 +178,22 @@ jssdkconfig.jsApiList = [
 					<a href="#" style="font-size:1.1rem;">请进4群 长按下方二维码入群</a>
 					<img src="addons/yy_shequn2/template/mobile/images/finger.png"/>
 	</div>	
-	<div class="content"  style="margin-top:10.5rem;width:90%;margin:2re auto;display: block;" id="touchArea" >
-			<img class="groupbg" id="imgeQUn" src="imy2mkmsl6f9bkd2ybfmzrmkwzwodh.jpg" style="width:100%;margin-top:1rem;"/>
+	<div class="content"  style="margin-top:0rem;width:90%;margin:0 auto;" id="touchArea" >
+			<img class="groupbg" src="attachment/images/shanxi.png" style="width:100%;margin-top:1rem;"/>
 				</div>
-    <div class="novip" style="margin-bottom:10.5rem;margin-top: 2rem;display: none;" id="noShow" >
-									<img src="addons/yy_shequn2/template/mobile/images/novip.jpg" class="novipbg"/>
+    <!-- <div class="novip" style="margin-bottom:10.5rem;margin-top: 2rem;display: block;" id="noShow" >
+				<img src="addons/yy_shequn2/template/mobile/images/novip.jpg" class="novipbg"/>
 				<div class="novipt">
 					<img src="addons/yy_shequn2/images/qunIco/qun7.jpg"/>
 					<span id="biaotispan">单身终点站</span>
-				</div>
-				<div class="novip2 novipp">
-					支付<span>19.9</span>元后可进群
+				</div> -->
+				<!-- <div class="novip2 novipp"> -->
+					<!-- 支付<span>19.9</span>元后可进群 -->
 					<!-- <a id="clickpay" href="javascript:;" style="color:#34b449;">点击支付&gt</a> -->
-					<a id="clickpay" href="https://mp.weixin.qq.com/s?__biz=MzA5MTg3NzA5Mw==&mid=2650031850&idx=1&sn=c5b186279f12ff0021762551372b21a4&chksm=88755d60bf02d4765b826f638caf08968751ec4800a4df5f9847b8cbddb00388a88e6a9b8bcc#rd" style="color:#34b449;">点击支付&gt</a>
+					<!-- <a id="clickpay" href="https://mp.weixin.qq.com/s?__biz=MzA5MTg3NzA5Mw==&mid=2650031850&idx=1&sn=c5b186279f12ff0021762551372b21a4&chksm=88755d60bf02d4765b826f638caf08968751ec4800a4df5f9847b8cbddb00388a88e6a9b8bcc#rd" style="color:#34b449;">点击支付&gt</a> -->
 					
-				</div>
-					    </div>
+				<!-- </div> -->
+			<!-- </div> -->
 </div>
 <!-- 弹窗 -->
 <div class="popwind" id='man' >
@@ -298,15 +298,11 @@ function jspay(jsParam) {
             return str;
         }
 	var tigle = getQueryVariable("title")
-	var imge = getQueryVariable("imge")
 	var fdsafsda = decodeURI(tigle);
 	var biaoti = document.getElementById('biaoti');
-	var imgeQUn = document.getElementById('imgeQUn');
 	biaoti.innerText = fdsafsda;
-	
 	var biaotispan = document.getElementById('biaotispan');
-	biaotispan.innerText = fdsafsda+"4";
-	imgeQUn.src="https://pf.hanbing365.cn/attachment/"+imge;
+	biaotispan.innerText = fdsafsda+"4"
 </script>
 
 <!-- Mirrored from pf.hanbing365.cn/app/index.php?i=3&c=entry&do=qunDetail&m=yy_shequn2&itemId=67 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Dec 2022 06:24:15 GMT -->
